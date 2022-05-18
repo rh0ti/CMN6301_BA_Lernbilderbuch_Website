@@ -107,52 +107,50 @@ i {
 
 /* Paper Z-index */
 #p1 {
-    z-index: 12;
-}
-
-#p2 {
     z-index: 11;
 }
 
-#p3 {
+#p2 {
     z-index: 10;
 }
 
-#p4 {
+#p3 {
     z-index: 9;
 }
 
-#p5 {
+#p4 {
     z-index: 8;
 }
 
-#p6 {
+#p5 {
     z-index: 7;
 }
 
-#p7 {
+#p6 {
     z-index: 6;
 }
 
-#p8 {
+#p7 {
     z-index: 5;
 }
 
-#p9 {
+#p8 {
     z-index: 4;
 }
 
-#p10 {
+#p9 {
     z-index: 3;
 }
 
-#p11 {
+#p10 {
     z-index: 2;
 }
 
-#p12 {
+#p11 {
     z-index: 1;
 }
+
+
 /* Customization */
 
 .book-title {
