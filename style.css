@@ -1,3 +1,16 @@
+
+@font-face{
+    font-family: 'Neatly-Printed';
+    src: url(/fonts/KgNeatlyPrinted-6Gwg.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Neatly-Printed-Spaced';
+    src: url(/fonts/KgNeatlyPrintedSpaced-yxrm.ttf) format('truetype');
+}
+
+
+
 /* General */
 
 * {
@@ -11,13 +24,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: 'Neatly-Printed';
     background-image: url(/images/Background.jpg);
     background-size: cover;
 }
 
 /* Button */
-button {
+#prev-btn, #next-btn {
     border: none;
     background-color: white;
     border-radius: 90%;
@@ -75,6 +88,7 @@ i {
     background-color: white;
     transform-origin: left;
     transition: transform 0.5s;
+    border-radius: 0px 50px 50px 0px;
 }
 
 .front {
@@ -93,6 +107,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 50px 50px 0px;
 }
 
 .back-content {
@@ -102,7 +117,8 @@ i {
 /* Paper Flipped */
 .flipped .front,
 .flipped .back {
-    transform: rotateY(-180deg)
+    transform: rotateY(-180deg);
+    border-radius: 0px 50px 50px 0px;
 }
 
 /* Paper Z-index */
@@ -165,7 +181,7 @@ i {
     border-radius: 30px;
 }
 
-#b1 {
+/* #b1 {
     padding: 20px;
     text-align: center;
     font-size: 1.2em;
@@ -180,4 +196,24 @@ i {
 
 #b1 p {
     margin-bottom: 20px;
+} */
+
+iframe{
+    border-radius: 50px 0px 0px 50px;
+}
+
+.front{
+    border: 1px black solid;
+}
+
+.front h1{
+    font-size: 3.5em;
+}
+
+.paper-button{ 
+    width: 300px;
+    height: 73px;
+    border-radius:50px;
+    background-color: #F15BB5;
+    border: 3px solid #6D200E;
 }
