@@ -198,7 +198,7 @@ i {
     margin-bottom: 20px;
 } */
 
-iframe{
+.book-iframe{
     border-radius: 50px 0px 0px 50px;
 }
 
@@ -269,4 +269,30 @@ iframe{
     font-family: 'Neatly-Printed';
     font-size: 35px;
 
+}
+
+.title-iframe{
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+.start-button{
+    height: 100px;
+    width: 450px;
+    border-radius: 50px;
+    background-color: #F15BB5;
+    border: 3px solid #6D200E;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+    font-family: 'Neatly-Printed';
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    
 }
