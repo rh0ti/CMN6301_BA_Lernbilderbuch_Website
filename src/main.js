@@ -1,4 +1,4 @@
-//-------------------------------------------------------------- Intro ---------------------------------------------------------------//
+
 
 const intro = document.querySelector('.intro');
 const logo = document.querySelector('.logo-header');
@@ -33,6 +33,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
 })
 
 console.log(logoSpan);
+
+//-------------------------------------------------------------- Intro 2 ---------------------------------------------------------------//
+
+$(window).on("load",function() {
+	$(".loader-wrapper").fadeOut("slow");
+})
 
 
 // References to DOM elements
@@ -190,6 +196,11 @@ function goPrevious() {
         currentState--;
     }
 }
+
+
+
+
+
 
 
 

@@ -34,16 +34,16 @@ body {
     background-size: cover;
 }
 
-
 /* ----------------------------------------------- Button -------------------------------------------- */
 #prev-btn, #next-btn {
     border: none;
     background-color: white;
     border-radius: 90%;
     box-shadow: 0px 5px 5px rgb(22, 133, 177);
-    margin: 180px;
+    margin: 180px; 
     cursor: pointer;
     transition: transform 0.5s;
+
 }
 
 button:focus {
@@ -59,12 +59,15 @@ i {
     font-size: 8em;
 }
 
+
+
 /* Book */
 .book {
     width: 650px;
     height: 800px;
     position: relative;
     transition: transform 0.5s;
+    z-index: 0;
 }
 
 .paper {
@@ -175,10 +178,18 @@ i {
 
 /* Customization */
 
-.book-title {
-    font-size: 3em;
-    margin-bottom: 40px;
+#f1{
+    background-image: url(/images/Book\ Titelblatt@8-664x86443-min.jpg);
+    background-size: cover;
+    border-radius: 0px 50px 50px 0px;
 }
+
+#b12{
+    background-image: url(/images/Book\ Rückseite\ @8-664x864-min.jpg);
+    background-size: cover;
+    border-radius: 50px 0px 0px 50px;
+}
+
 
 .cover-img {
     width: 200px;
@@ -187,30 +198,11 @@ i {
     border-radius: 30px;
 }
 
-/* #b1 {
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    justify-content: space-around;
-}
-
-#b1 h2 {
-    font-size: 2em;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-#b1 p {
-    margin-bottom: 20px;
-} */
 
 .book-iframe{
     border-radius: 50px 0px 0px 50px;
 }
 
-/* .front{
-    border: 1px black solid;
-} */
 
 .front h1{
     font-size: 3.5em;
@@ -304,6 +296,7 @@ a{
 }
 
 
+
     /* ----------------------------------------------------------- Splash Screen ----------------------------------------------------*/
 
     .intro{
@@ -365,3 +358,15 @@ a{
     .logo .image-logo2{
         display: none;
     }
+
+
+    .home-nav{
+        font-family: 'Neatly-Printed';
+        font-size: 2em;
+        color: white;
+        font-weight:bolder;
+        position: relative;
+        left:48%;
+        bottom: 430px;
+    }
+   
