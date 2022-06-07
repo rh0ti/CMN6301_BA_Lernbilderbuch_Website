@@ -71,8 +71,8 @@ let maxState = numOfPapers + 1;
 
 function openBook() {
     book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-180px)";
-    nextBtn.style.transform = "translateX(180px)";
+    prevBtn.style.transform = "translateX(-170px)";
+    nextBtn.style.transform = "translateX(170px)";
 }
 
 function closeBook(isFirstPage) {
