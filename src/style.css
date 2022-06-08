@@ -232,8 +232,13 @@ i {
 }
 
 .paper-button img{
-    height: 85%;
+    height: 75%;
     
+}
+
+.paper-button:hover{
+    background-color: rgb(114, 253, 0);
+    width: 295px;
 }
 
 .choice-button{
@@ -294,6 +299,13 @@ a{
     font-weight: bolder;
     color: white;
     
+}
+
+.start-button:hover{
+    background-color: rgb(114, 253, 0);
+    height: 90px;
+    width: 430px;
+    font-size: 50px;
 }
 
 
