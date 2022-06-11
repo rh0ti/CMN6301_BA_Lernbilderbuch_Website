@@ -218,6 +218,7 @@ i {
     border: 3px solid #6D200E;
     display: flex;
     justify-content:center;
+    align-items: center;
     
 
 }
