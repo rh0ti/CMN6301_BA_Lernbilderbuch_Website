@@ -40,7 +40,7 @@ $(window).on("load",function() {
 	$(".loader-wrapper").fadeOut("slow");
 })
 
-//-------------------------------------------------------------- Flipping Bookg ---------------------------------------------------------------//
+//-------------------------------------------------------------- Flipping Book ---------------------------------------------------------------//
 
 // References to DOM elements
 const prevBtn = document.querySelector('#prev-btn');
@@ -162,6 +162,7 @@ function goPrevious() {
         currentState--;
     }
 }
+
 
 
 
