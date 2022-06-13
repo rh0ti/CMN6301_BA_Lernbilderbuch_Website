@@ -110,3 +110,15 @@ function goPrevious() {
         currentState--;
     }
 }
+
+//-------------------------------------------------------------- Chlick Questions ---------------------------------------------------------------//
+
+$(document).ready(function($){ 
+
+    $('.answer').on({
+        'click': function(){
+            $('.choice-button .answer').css("border", "solid red 3px");
+        }
+    })
+
+    });
