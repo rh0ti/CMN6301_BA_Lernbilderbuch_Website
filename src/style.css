@@ -88,8 +88,32 @@ ul li a{
     cursor: pointer;
     transition: transform 0.5s;
 
-
 }
+
+@media only screen and (max-width: 1400px) {
+    #prev-btn, #next-btn {
+        margin: 100px; 
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    #prev-btn, #next-btn {
+        margin: 80px; 
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    #prev-btn, #next-btn {
+        margin: 50px; 
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    #prev-btn, #next-btn {
+        margin: 20px; 
+    }
+  }
 
 button:focus {
     outline: none;
@@ -135,14 +159,14 @@ i {
 
   @media only screen and (max-width: 1100px) {
     .book {
-        width: 340px;
+        width: 360px;
         height: 480px;
     }
   }
 
   @media only screen and (max-width: 880px) {
     .book {
-        width: 200px;
+        width: 270px;
         height: 350px;
     }
   }
@@ -444,6 +468,39 @@ i {
     
 }
 
+@media only screen and (max-width: 1400px) {
+    .choice-button .answer{
+        height: 94px;
+        width: 150px;
+        font-size: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .choice-button .answer{
+        height: 70px;
+        width: 100px;
+        font-size: 30px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    .choice-button .answer{
+        height: 60px;
+        width: 80px;
+        font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .choice-button .answer{
+        height: 50px;
+        width: 70px;
+        font-size: 20px;
+    }
+  }
+
 .choice-button-color #orange{
     height: 94px;
     width: 170px;
@@ -457,7 +514,7 @@ i {
 @media only screen and (max-width: 1400px) {
     .choice-button-color #orange{
         height: 84px;
-        width: 150px;
+        width: 110px;
     }
   }
 
@@ -495,7 +552,7 @@ i {
 @media only screen and (max-width: 1400px) {
     .choice-button-color #yellow{
         height: 84px;
-        width: 150px;
+        width: 110px;
     }
   }
 
@@ -532,7 +589,7 @@ i {
 @media only screen and (max-width: 1400px) {
     .choice-button-color #purple{
         height: 84px;
-        width: 150px;
+        width: 110px;
     }
   }
 
@@ -570,6 +627,38 @@ i {
 
 }
 
+
+@media only screen and (max-width: 1400px) {
+    .choice-button .right{
+        height: 94px;
+        width: 150px;
+        font-size: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .choice-button .right{
+        height: 70px;
+        width: 100px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    .choice-button .right{
+        height: 60px;
+        width: 80px;
+        font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .choice-button .right{
+        height: 50px;
+        width: 70px;
+        font-size: 20px;
+    }
+  }
 
 
 
