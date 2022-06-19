@@ -16,7 +16,7 @@
 
 
 
-/* General */
+/* My CSS Reset*/
 
 * {
     margin: 0;
@@ -28,7 +28,7 @@ body {
     height: 100vh;
     width: 100%;
     font-family: 'Neatly-Printed';
-    background-image: url(/images/Background.jpg);
+    background-image: url(../images/Background.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -114,6 +114,38 @@ i {
     transition: transform 0.5s;
     z-index: 0;
 }
+
+@media only screen and (max-width: 1400px) {
+    .book {
+        width: 540px;
+        height: 680px;
+        position: relative;
+        transition: transform 0.5s;
+        z-index: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .book {
+        width: 440px;
+        height: 580px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    .book {
+        width: 340px;
+        height: 480px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .book {
+        width: 200px;
+        height: 350px;
+    }
+  }
 
 .paper {
     height: 100%;
@@ -209,25 +241,25 @@ i {
 /* Customization */
 
 #f1{
-    background-image: url(/images/Book\ Titelblatt@8-664x86443-min.jpg);
+    background-image: url(../images/Book\ Titelblatt.jpg);
     background-size: cover;
     border-radius: 0px 50px 50px 0px;
 }
 
 #f1-2{
-    background-image: url(/images/Book\ Titelblatt\ -\ Copy@8-664x864-min.jpg);
+    background-image: url(../images/Uebung\ Titelblatt.jpg);
     background-size: cover;
     border-radius: 0px 50px 50px 0px;
 }
 
 #b7{
-    background-image: url(/images/Book\ Rückseite\ NEU\ @8-664x864-min.jpg);
+    background-image: url(../images/Book\ Rückseite.jpg);
     background-size: cover;
     border-radius: 50px 0px 0px 50px;
 }
 
 #b5{
-    background-image: url(/images/Book\ Rückseite\ \ -\ Copy@8-664x864-min.jpg);
+    background-image: url(../images/Uebung\ Rückseite.jpg);
     background-size: cover;
     border-radius: 50px 0px 0px 50px;
     background-position: center;
@@ -254,6 +286,32 @@ i {
     bottom: 8%;
 }
 
+@media only screen and (max-width: 1400px) {
+    .front h1{
+        font-size: 3em;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .front h1{
+        font-size: 2.5em;
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    .front h1{
+        font-size: 1.9em;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .front h1{
+        font-size: 1.3em;
+    }
+  }
+
+
 .paper-button{ 
     width: 300px;
     height: 73px;
@@ -267,12 +325,42 @@ i {
 
 }
 
+@media only screen and (max-width: 1400px) {
+    .paper-button{ 
+        width: 250px;
+        height: 60px;
+    }
+  }
+
+
+  @media only screen and (max-width: 880px) {
+    .paper-button{ 
+        width: 150px;
+        height: 40px;
+    }
+  }
+
 .paper-button h1{
     font-family: 'Neatly-Printed';
     font-size: 5em;
     color: white;
     font-weight:bolder;
 }
+
+
+@media only screen and (max-width: 1400px) {
+    .paper-button h1{
+        font-size: 4em;
+    }
+  }
+
+
+  @media only screen and (max-width: 880px) {
+    .paper-button h1{
+        font-size: 2.8em;
+    }
+  }
+
 
 .paper-button img{
     height: 75%;
@@ -285,6 +373,20 @@ i {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1400px) {
+    .paper-button:hover{
+        width: 280px;
+    }
+  }
+
+
+  @media only screen and (max-width: 880px) {
+    .paper-button:hover{
+        width: 170px;
+
+    }
+  }
+
 .choice-button, .choice-button-color{
     height: 133px;
     width: 592px;
@@ -295,6 +397,39 @@ i {
     align-items: center;
     margin-bottom: 100px;
 }
+
+@media only screen and (max-width: 1400px) {
+    .choice-button, .choice-button-color{
+        height: 133px;
+        width: 500px;
+        margin-bottom: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .choice-button, .choice-button-color{
+        height: 100px;
+        width: 400px;
+        margin-bottom: 50px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    .choice-button, .choice-button-color{
+        height: 80px; 
+        width: 300px;
+        margin-bottom: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .choice-button, .choice-button-color{
+        height: 65px;
+        width: 200px;
+        margin-bottom: 50px;
+    }
+  }
 
 .choice-button .answer{
     height: 94px;
@@ -319,6 +454,34 @@ i {
     
 }
 
+@media only screen and (max-width: 1400px) {
+    .choice-button-color #orange{
+        height: 84px;
+        width: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .choice-button-color #orange{
+        height: 84px;
+        width: 110px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .choice-button-color #orange{
+        height: 64px;
+        width: 90px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .choice-button-color #orange{
+        height: 44px;
+        width: 60px;
+    }
+  }
+
 .choice-button-color #yellow{
     height: 94px;
     width: 170px;
@@ -329,6 +492,33 @@ i {
     
 }
 
+@media only screen and (max-width: 1400px) {
+    .choice-button-color #yellow{
+        height: 84px;
+        width: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .choice-button-color #yellow{
+        height: 84px;
+        width: 110px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .choice-button-color #yellow{
+        height: 64px;
+        width: 90px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .choice-button-color #yellow{
+        height: 44px;
+        width: 60px;
+    }
+  }
+
 .choice-button-color #purple{
     height: 94px;
     width: 170px;
@@ -338,6 +528,34 @@ i {
     cursor: pointer;
     
 }
+
+@media only screen and (max-width: 1400px) {
+    .choice-button-color #purple{
+        height: 84px;
+        width: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .choice-button-color #purple{
+        height: 84px;
+        width: 110px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .choice-button-color #purple{
+        height: 64px;
+        width: 90px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .choice-button-color #purple{
+        height: 44px;
+        width: 60px;
+    }
+  }
 
 .choice-button .right{
     height: 94px;
@@ -351,6 +569,8 @@ i {
     cursor: pointer;
 
 }
+
+
 
 
 
@@ -406,12 +626,75 @@ a{
 
 }
 
+
+@media only screen and (max-width: 1400px) {
+    .uebungs-button{
+        height: 100px;
+        width: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .uebungs-button{
+        height: 100px;
+        width: 300px;
+        font-size: 80px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .uebungs-button{
+        height: 90px;
+        width: 250px;
+        font-size: 70px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .uebungs-button{
+        height: 80px;
+        width: 200px;
+        font-size: 60px;
+    }
+  }
+
+
 .uebungs-button:hover{
     background-color: rgb(114, 253, 0);
     height: 90px;
     width: 390px;
     font-size: 90px;
 }
+
+
+@media only screen and (max-width: 1400px) {
+    .uebungs-button:hover{
+        height: 100px;
+        width: 340px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .uebungs-button:hover{
+        height: 100px;
+        width: 290px;
+        font-size: 75px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .uebungs-button:hover{
+        height: 90px;
+        width: 240px;
+        font-size: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .uebungs-button:hover{
+        height: 80px;
+        width: 190px;
+        font-size: 55px;
+    }
+  }
 
 
     /* ----------------------------------------------------------- Splash Screen ----------------------------------------------------*/
