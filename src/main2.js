@@ -111,14 +111,81 @@ function goPrevious() {
     }
 }
 
-//-------------------------------------------------------------- Chlick Questions ---------------------------------------------------------------//
+//-------------------------------------------------------------- Click Questions ---------------------------------------------------------------//
 
 $(document).ready(function($){ 
 
-    $('.answer').on({
+    $('#right1').on({
         'click': function(){
-            $('.choice-button .answer').css("border", "solid red 3px");
+            $('.choice-button #right1').css("border", "solid #67D967 3px");
+            $('.choice-button #right1').css("background-color", "#84EFB1");
+            $('.choice-button #right1').css("color", "white");
         }
     })
+
+    $('#wrong2').on({
+        'click': function(){
+            $('.choice-button #wrong2').css("border", "solid red 3px");
+            $('.choice-button #wrong2').css("background-color", "#FFAFAF");
+            $('.choice-button #wrong2').css("color", "white");
+        }
+    })
+
+    $('#wrong3').on({
+        'click': function(){
+            $('.choice-button #wrong3').css("border", "solid red 3px");
+            $('.choice-button #wrong3').css("background-color", "#FFAFAF");
+            $('.choice-button #wrong3').css("color", "white");
+        }
+    })
+
+    $('#wrong4').on({
+        'click': function(){
+            $('.choice-button #wrong4').css("border", "solid red 3px");
+            $('.choice-button #wrong4').css("background-color", "#FFAFAF");
+            $('.choice-button #wrong4').css("color", "white");
+        }
+    })
+
+    $('#right5').on({
+        'click': function(){
+            $('.choice-button #right5').css("border", "solid #67D967 3px");
+            $('.choice-button #right5').css("background-color", "#84EFB1");
+            $('.choice-button #right5').css("color", "white");
+        }
+    })
+
+    $('#wrong6').on({
+        'click': function(){
+            $('.choice-button #wrong6').css("border", "solid red 3px");
+            $('.choice-button #wrong6').css("background-color", "#FFAFAF");
+            $('.choice-button #wrong6').css("color", "white");
+        }
+    })
+
+    $('#wrong7').on({
+        'click': function(){
+            $('.choice-button #wrong7').css("border", "solid red 3px");
+            $('.choice-button #wrong7').css("background-color", "#FFAFAF");
+            $('.choice-button #wrong7').css("color", "white");
+        }
+    })
+
+    $('#right8').on({
+        'click': function(){
+            $('.choice-button #right8').css("border", "solid #67D967 3px");
+            $('.choice-button #right8').css("background-color", "#84EFB1");
+            $('.choice-button #right8').css("color", "white");
+        }
+    })
+
+    $('#wrong9').on({
+        'click': function(){
+            $('.choice-button #wrong9').css("border", "solid red 3px");
+            $('.choice-button #wrong9').css("background-color", "#FFAFAF");
+            $('.choice-button #wrong9').css("color", "white");
+        }
+    })
+
 
     });
