@@ -187,5 +187,23 @@ $(document).ready(function($){
         }
     })
 
+    $('#orange').on({
+        'click': function(){
+            $('.choice-button-color #orange').css("border", "solid red 5px");
+        }
+    })
+
+    $('#yellow').on({
+        'click': function(){
+            $('.choice-button-color #yellow').css("border", "solid red 5px");
+        }
+    })
+
+    $('#purple').on({
+        'click': function(){
+            $('.choice-button-color #purple').css("border", "solid #67D967 5px");
+        }
+    })
+
 
     });
