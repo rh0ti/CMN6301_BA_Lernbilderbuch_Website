@@ -5,7 +5,7 @@ $(window).on("load",function() {
 })
 
 
-//-------------------------------------------------------------- Flipping Bookg ---------------------------------------------------------------//
+//-------------------------------------------------------------- Flipping Book ---------------------------------------------------------------//
 
 // References to DOM elements
 const prevBtn = document.querySelector('#prev-btn');
@@ -86,25 +86,27 @@ function goPrevious() {
             case 2:
                 closeBook(true);
                 paper1.classList.remove("flipped");
-                paper1.style.zIndex = 5;
+                paper1.style.zIndex = 20;
                 break;
             case 3:
                 paper2.classList.remove("flipped");
-                paper2.style.zIndex = 4;
+                paper2.style.zIndex = 19;
                 break;
             case 4: 
                 paper3.classList.remove("flipped");
-                paper3.style.zIndex = 3;
+                paper3.style.zIndex = 18;
                 break;
             case 5:
                 paper4.classList.remove("flipped");
-                paper4.style.zIndex = 2;
+                paper4.style.zIndex = 17;
                 break;
             case 6: 
                 openBook()
                 paper5.classList.remove("flipped");
-                paper5.style.zIndex = 1;
+                paper5.style.zIndex = 16;
                 break;
+            default:
+                    throw new Error("unknown state");
         }
 
         currentState--;
@@ -207,3 +209,16 @@ $(document).ready(function($){
 
 
     });
+
+
+//-------------------------------------------------------------- Audio ---------------------------------------------------------------//
+
+    const audio7 = new Audio();
+    const audio8 = new Audio();
+    const audio9 = new Audio();
+    const audio10 = new Audio();
+
+    audio7.src = "../audio/7. Formen_Audio_Übung_1.wav";
+    audio8.src = "../audio/7. Formen_Audio_Übung_2.wav";
+    audio9.src = "../audio/9. Formen_Audio_Übung_3.wav";
+    audio10.src = "../audio/10. Formen_Audio_Übung_4.wav";

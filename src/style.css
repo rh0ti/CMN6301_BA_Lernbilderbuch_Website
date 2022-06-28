@@ -233,32 +233,33 @@ i {
 
 /* Paper Z-index */
 #p1 {
-    z-index: 7;
+    z-index: 20;
 }
 
 #p2 {
-    z-index: 6;
+    z-index: 19;
 }
 
 #p3 {
-    z-index: 5;
+    z-index: 18;
 }
 
 #p4 {
-    z-index: 4;
+    z-index: 17;
 }
 
 #p5 {
-    z-index: 3;
+    z-index: 16;
 }
 
 #p6 {
-    z-index: 2;
+    z-index: 15;
 }
 
 #p7 {
-    z-index: 1;
+    z-index: 14;
 }
+
 
 
 
