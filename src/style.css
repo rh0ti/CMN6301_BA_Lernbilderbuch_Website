@@ -311,6 +311,16 @@ i {
     bottom: 8%;
 }
 
+.front #f3-1{
+    font-size: 0.8em;
+}
+
+.front #f3-1 .paper-button{
+    font-size: 0.8em;
+    position: relative;
+    bottom: 8%;
+}
+
 @media only screen and (max-width: 1400px) {
     .front h1{
         font-size: 3em;

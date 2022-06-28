@@ -27,7 +27,7 @@
                 </ul>
             </nav>
             <!-- Previous Button -->
-            <button id="prev-btn">
+            <button id="prev-btn" onclick="audioPage.play()">
                 <i class="fas fa-arrow-circle-left"></i>
             </button>
             <!-- The Book -->
@@ -48,17 +48,17 @@
                 <div id="p2" class="paper">
                     <div class="front">
                         <div id="f2" class="front-content">
-                            <h1>Welche Figuren passt zum 
+                            <h1>Welche Figur passt zur
                                 <br>
-                                blauen Figur
+                                blauen Form?
                                 <br><br>
-                                Du kannst mich anklicken oder bewegen.
+                                Du kannst mich anklicken und bewegen.
                             </h1>
 
                             <div class="choice-button-color">
-                                <button id="orange"></button>
-                                <button id="yellow" class="wrong"></button>
-                                <button id="purple" class="wrong"></button>
+                                <button id="orange" onclick="audioWrong.play()"></button>
+                                <button id="yellow" class="wrong" onclick="audioWrong.play()"></button>
+                                <button id="purple" class="wrong" onclick="audioRight.play()"></button>
                             </div>
 
                             <button class="paper-button" onclick="audio7.play()"> 
@@ -76,20 +76,24 @@
                 <!-- Paper 3 -->
                 <div id="p3" class="paper">
                     <div class="front">
-                        <div id="f3" class="front-content">
-                            <h1>Aus wie vielen Flächen besteht 
-                                <br>
-                                ein Würfel?
+                        <div id="f3-1" class="front-content">
+                            <h1>
                                 <br><br>
-                                Du kannst mich anklicken oder bewegen.
+                                Würfelnetze bestehen aus mehreren Quadraten. Die Quadrate hängen an den Seiten zusammen. 
+                                <br><br>
+                                Zusammengefaltet ergeben sie einen 
+                                <br>
+                                Würfel.
+                                <br><br>
+                                Aus wie vielen Flächen besteht ein
+                                <br>
+                                Würfel?
                             </h1>
-
                             <div class="choice-button">
-                                <button class="answer" id="right1">6</button>
-                                <button class="answer" id="wrong2">12</button>
-                                <button class="answer" id="wrong3">50</button>
+                                <button class="answer" id="right1" onclick="audioRight.play()">6</button>
+                                <button class="answer" id="wrong2" onclick="audioWrong.play()">12</button>
+                                <button class="answer" id="wrong3" onclick="audioWrong.play()">50</button>
                             </div>
-
                             <button class="paper-button" onclick="audio8.play()"> 
                                 <img src="/images/Element 3.png" alt="Speaker">
                                 <h1>vorlesen</h1>
@@ -108,15 +112,15 @@
                         <div id="f4" class="front-content">
                             <h1>Wie viele Würfel sind auf 
                                 <br>
-                                dem Bild zu sehen?
+                                dem Bild?
                                 <br><br>
-                                Du kannst mich anklicken oder bewegen.
+                                Du kannst mich anklicken und bewegen.
                             </h1>
 
                             <div class="choice-button">
-                                <button class="answer" id="wrong4">10</button>
-                                <button class="answer" id="right5">11</button>
-                                <button class="answer" id="wrong6">50</button>
+                                <button class="answer" id="wrong4" onclick="audioWrong.play()">10</button>
+                                <button class="answer" id="right5" onclick="audioRight.play()">11</button>
+                                <button class="answer" id="wrong6" onclick="audioWrong.play()">50</button>
                             </div>
 
                             <button class="paper-button" onclick="audio9.play()"> 
@@ -137,14 +141,14 @@
                     <div id="f5" class="front-content">
                         <h1>Wie viele Kugeln sind auf 
                             <br>
-                            dem Bild zu sehen?
+                            dem Bild?
                             <br><br>
-                            Du kannst mich anklicken oder bewegen.
+                            Du kannst mich anklicken und bewegen.
                         </h1>
                         <div class="choice-button">
-                            <button class="answer" id="wrong7">19</button>
-                            <button class="answer" id="right8">20</button>
-                            <button class="answer" id="wrong9">18</button>
+                            <button class="answer" id="wrong7" onclick="audioWrong.play()">19</button>
+                            <button class="answer" id="right8" onclick="audioRight.play()">20</button>
+                            <button class="answer" id="wrong9" onclick="audioWrong.play()">18</button>
                         </div>
                         <button class="paper-button" onclick="audio10.play()"> 
                             <img src="/images/Element 3.png" alt="Speaker">
@@ -159,7 +163,7 @@
             </div>
         </div>
         <!-- Next Button -->
-        <button id="next-btn">
+        <button id="next-btn" onclick="audioPage.play()">
             <i class="fas fa-arrow-circle-right"></i>
         </button>
     </section>  

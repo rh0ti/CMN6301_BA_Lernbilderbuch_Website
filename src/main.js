@@ -175,6 +175,10 @@ const audio3 = new Audio();
 const audio4 = new Audio();
 const audio5 = new Audio();
 const audio6 = new Audio();
+const audioWrong = new Audio();
+const audioRight = new Audio();
+const audioPage = new Audio();
+const audioButton = new Audio();
 
 
 audio1.src = "../audio/1. Formen_Audio_Würfel.wav";
@@ -183,5 +187,11 @@ audio3.src = "../audio/2. Formen_Audio_Rechteck.wav";
 audio4.src = "../audio/3. Formen_Audio_Dreieck.wav";
 audio5.src = "../audio/4. Formen_Audio_Kreis.wav";
 audio6.src = "../audio/5. Formen_Audio_Kugel.wav";
+audioWrong.src = "../audio/Incorrect Answer.mp3";
+audioRight.src = "../audio/Quiz Correct Answer 1.mp3";
+audioPage.src = "../audio/page-turning.mp3";
+audioButton.src = "../audio/Load Game Button 1.mp3";
+
+
 
 

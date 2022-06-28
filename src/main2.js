@@ -217,8 +217,15 @@ $(document).ready(function($){
     const audio8 = new Audio();
     const audio9 = new Audio();
     const audio10 = new Audio();
+    const audioWrong = new Audio();
+    const audioRight = new Audio();
+    const audioPage = new Audio();
 
     audio7.src = "../audio/7. Formen_Audio_Übung_1.wav";
     audio8.src = "../audio/7. Formen_Audio_Übung_2.wav";
     audio9.src = "../audio/9. Formen_Audio_Übung_3.wav";
     audio10.src = "../audio/10. Formen_Audio_Übung_4.wav";
+    audioWrong.src = "../audio/Incorrect Answer.mp3";
+    audioRight.src = "../audio/Quiz Correct Answer 1.mp3";
+    audioPage.src = "../audio/page-turning.mp3";
+
