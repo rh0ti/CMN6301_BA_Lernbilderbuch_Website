@@ -229,3 +229,51 @@ $(document).ready(function($){
     audioRight.src = "../audio/Quiz Correct Answer 1.mp3";
     audioPage.src = "../audio/page-turning.mp3";
 
+
+    $(document).ready(function(){
+        $("#vorlesen7").click(function(){
+          $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio7.pause()"></i>');
+        });
+    });
+        $(document).ready(function(){
+        $("#vorlesen8").click(function(){
+              $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio8.pause()"></i>');
+            });
+      });
+    
+      $(document).ready(function(){
+        $("#vorlesen9").click(function(){
+              $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio9.pause()"></i>');
+            });
+      });
+    
+      $(document).ready(function(){
+        $("#vorlesen10").click(function(){
+              $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio10.pause()"></i>');
+            });
+      });
+    
+      //-------------------------------------------------------------- Audio Stop Left Arrow ---------------------------------------------------------------//
+    
+      $(document).ready(function(){
+        $("#vorlesen7").click(function(){
+          $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio7.pause()"></i>');
+        });
+    });
+        $(document).ready(function(){
+        $("#vorlesen8").click(function(){
+              $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio8.pause()"></i>');
+            });
+      });
+    
+      $(document).ready(function(){
+        $("#vorlesen9").click(function(){
+              $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio9.pause()"></i>');
+            });
+      });
+    
+      $(document).ready(function(){
+        $("#vorlesen10").click(function(){
+              $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio10.pause()"></i>');
+            });
+      });

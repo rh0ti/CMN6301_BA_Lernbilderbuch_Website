@@ -179,7 +179,8 @@ const audioWrong = new Audio();
 const audioRight = new Audio();
 const audioPage = new Audio();
 const audioButton = new Audio();
-
+const allSounds = audio1;
+    
 
 audio1.src = "../audio/1. Formen_Audio_Würfel.wav";
 audio2.src = "../audio/6. Formen_Audio_Quadrat.wav";
@@ -192,6 +193,80 @@ audioRight.src = "../audio/Quiz Correct Answer 1.mp3";
 audioPage.src = "../audio/page-turning.mp3";
 audioButton.src = "../audio/Load Game Button 1.mp3";
 
+//-------------------------------------------------------------- Audio Stop RightArrow ---------------------------------------------------------------//
 
 
+$(document).ready(function(){
+    $("#vorlesen1").click(function(){
+      $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio1.pause()"></i>');
+    });
+});
+    $(document).ready(function(){
+    $("#vorlesen2").click(function(){
+          $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio2.pause()"></i>');
+        });
+  });
 
+  $(document).ready(function(){
+    $("#vorlesen3").click(function(){
+          $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio3.pause()"></i>');
+        });
+  });
+
+  $(document).ready(function(){
+    $("#vorlesen4").click(function(){
+          $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio4.pause()"></i>');
+        });
+  });
+
+  $(document).ready(function(){
+    $("#vorlesen5").click(function(){
+          $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio5.pause()"></i>');
+        });
+  });
+
+
+  $(document).ready(function(){
+    $("#vorlesen6").click(function(){
+          $("#arrow-right").replaceWith('<i class="fas fa-arrow-circle-right" id="arrow-right" onclick="audio6.pause()"></i>');
+        });
+  });
+
+
+  //-------------------------------------------------------------- Audio Stop Left Arrow ---------------------------------------------------------------//
+
+  $(document).ready(function(){
+    $("#vorlesen1").click(function(){
+      $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio1.pause()"></i>');
+    });
+});
+    $(document).ready(function(){
+    $("#vorlesen2").click(function(){
+          $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio2.pause()"></i>');
+        });
+  });
+
+  $(document).ready(function(){
+    $("#vorlesen3").click(function(){
+          $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio3.pause()"></i>');
+        });
+  });
+
+  $(document).ready(function(){
+    $("#vorlesen4").click(function(){
+          $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio4.pause()"></i>');
+        });
+  });
+
+  $(document).ready(function(){
+    $("#vorlesen5").click(function(){
+          $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio5.pause()"></i>');
+        });
+  });
+
+
+  $(document).ready(function(){
+    $("#vorlesen6").click(function(){
+          $("#arrow-left").replaceWith('<i class="fas fa-arrow-circle-left" id="arrow-left" onclick="audio6.pause()"></i>');
+        });
+  });
