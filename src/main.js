@@ -182,12 +182,12 @@ const audioButton = new Audio();
 const allSounds = audio1;
     
 
-audio1.src = "../audio/1. Formen_Audio_Würfel.wav";
-audio2.src = "../audio/6. Formen_Audio_Quadrat.wav";
-audio3.src = "../audio/2. Formen_Audio_Rechteck.wav";
-audio4.src = "../audio/3. Formen_Audio_Dreieck.wav";
-audio5.src = "../audio/4. Formen_Audio_Kreis.wav";
-audio6.src = "../audio/5. Formen_Audio_Kugel.wav";
+audio1.src = "../audio/1. Formen_Audio_Würfel.mp3";
+audio2.src = "../audio/6. Formen_Audio_Quadrat.mp3";
+audio3.src = "../audio/2. Formen_Audio_Rechteck.mp3";
+audio4.src = "../audio/3. Formen_Audio_Dreieck.mp3";
+audio5.src = "../audio/4. Formen_Audio_Kreis.mp3";
+audio6.src = "../audio/5. Formen_Audio_Kugel.mp3";
 audioWrong.src = "../audio/Incorrect Answer.mp3";
 audioRight.src = "../audio/Quiz Correct Answer 1.mp3";
 audioPage.src = "../audio/page-turning.mp3";
