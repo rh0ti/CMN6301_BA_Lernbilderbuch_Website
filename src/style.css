@@ -40,20 +40,21 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    /* border: #67D967 solid 3px; */
+    position: relative;
 }
 
 
 /* ----------------------------------------------- Navigation -------------------------------------------- */
 
  nav{
-    position: relative;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align:start;
         align-self:flex-start;
     /* border: 3px solid green; */
-    left: 50%;
 }
 
 
@@ -97,7 +98,7 @@ ul li a{
 
 }
 
-/* ----------------------------------------------- Button -------------------------------------------- */
+/* ----------------------------------------------- Previous & Next Button -------------------------------------------- */
 #prev-btn, #next-btn {
     border: none;
     background-color: white;
@@ -113,6 +114,8 @@ ul li a{
     transition: transform 0.5s, -webkit-transform 0.5s;
 
 }
+
+/* ---------------------------------------- Previous & Next Button Media Queries 1/2---------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     #prev-btn, #next-btn {
@@ -136,8 +139,28 @@ ul li a{
   @media only screen and (max-width: 880px) {
     #prev-btn, #next-btn {
         margin: 20px; 
+
     }
   }
+
+  @media only screen and (max-width: 390px) {
+    #prev-btn {
+        margin: -250px; 
+        position: relative;
+        bottom: -30%;
+
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+         #next-btn {
+        margin: -250px; 
+        position: relative;
+        bottom: -30%;
+    }
+  }
+
+/* ---------------------------------------- Previous & Next Buttons Media Queries 2/2 ---------------------------------------- */
 
 button:focus {
     outline: none;
@@ -167,6 +190,7 @@ i {
     z-index: 0;
 }
 
+/* -------------------------------------- Book Pages Media Queries 1/2 --------------------------------------- */
 @media only screen and (max-width: 1400px) {
     .book {
         width: 540px;
@@ -203,6 +227,17 @@ i {
     }
   }
 
+  @media only screen and (max-width: 390px) {
+    .book {
+        width: 220px;
+        height: 300px;
+    }
+  }
+/* -------------------------------------- Book Pages Media Queries 2/2 --------------------------------------- */
+
+
+
+/* -------- Paper ------ */
 .paper {
     height: 100%;
     width: 100%;
@@ -318,7 +353,7 @@ i {
 }
 
 
-
+/* -------------------------------------- Cover Images --------------------------------------- */
 
 /* Customization */
 
@@ -379,6 +414,8 @@ i {
     bottom: 8%;
 }
 
+/* -------------------------------------- Paper Buttons f3-1 Media Queries 1/2 --------------------------------------- */
+
 @media only screen and (max-width: 1400px) {
     .front h1{
         font-size: 3em;
@@ -404,6 +441,15 @@ i {
     }
   }
 
+  @media only screen and (max-width: 390px) {
+    .front h1{
+        font-size: 1.2em;
+        bottom: 5%;
+    }
+  }
+
+
+/* -------------------------------------- Paper Buttons f3-1 Media Queries 2/2 --------------------------------------- */
 
 .paper-button{ 
     width: 300px;
@@ -420,9 +466,10 @@ i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    
 
 }
+
+/* -------------------------------------- Paper Buttons Media Queries 1/2 --------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     .paper-button{ 
@@ -460,6 +507,8 @@ i {
     }
   }
 
+  /* -------------------------------------- Paper Buttons Media Queries 2/2 --------------------------------------- */
+
 
 .paper-button img{
     height: 75%;
@@ -471,6 +520,8 @@ i {
     width: 295px;
     cursor: pointer;
 }
+
+  /* -------------------------------------- Paper Buttons Hover Media Queries 1/2 --------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     .paper-button:hover{
@@ -485,7 +536,10 @@ i {
 
     }
   }
+ /* -------------------------------------- Paper Buttons Hover Media Queries 2/2 --------------------------------------- */
 
+
+ /* ----- Choice Button ------ */
 .choice-button, .choice-button-color{
     height: 133px;
     width: 592px;
@@ -502,6 +556,8 @@ i {
             align-items: center;
     margin-bottom: 100px;
 }
+
+ /* -------------------------------------- Choice Buttons  Media Queries 1/2 --------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     .choice-button, .choice-button-color{
@@ -536,6 +592,10 @@ i {
     }
   }
 
+/* -------------------------------------- Choice Buttons  Media Queries 2/2 --------------------------------------- */
+
+
+ /* ----- Choice Button Answer------ */
 .choice-button .answer{
     height: 94px;
     width: 170px;
@@ -548,6 +608,8 @@ i {
 
     
 }
+
+/* -------------------------------------- Choice Buttons Answer Media Queries 1/2 --------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     .choice-button .answer{
@@ -581,7 +643,9 @@ i {
         font-size: 20px;
     }
   }
+/* -------------------------------------- Choice Buttons Answer  Media Queries 2/2 --------------------------------------- */
 
+/* ----- Choice Button Orange------ */
 .choice-button-color #orange{
     height: 94px;
     width: 170px;
@@ -592,6 +656,8 @@ i {
     
 }
 
+/* -------------------------------------- Choice Buttons Orange  Media Queries 1/2 --------------------------------------- */
+
 @media only screen and (max-width: 1400px) {
     .choice-button-color #orange{
         height: 84px;
@@ -620,6 +686,9 @@ i {
     }
   }
 
+/* -------------------------------------- Choice Buttons Orange  Media Queries 2/2 --------------------------------------- */
+
+   /* ----- Choice Button Yellow ------ */
 .choice-button-color #yellow{
     height: 94px;
     width: 170px;
@@ -630,6 +699,8 @@ i {
     
 }
 
+/* -------------------------------------- Choice Buttons Yellow  Media Queries 1/2 --------------------------------------- */
+
 @media only screen and (max-width: 1400px) {
     .choice-button-color #yellow{
         height: 84px;
@@ -657,6 +728,9 @@ i {
     }
   }
 
+  /* -------------------------------------- Choice Buttons Yellow  Media Queries 2/2 --------------------------------------- */
+
+   /* ----- Choice Button Purple------ */
 .choice-button-color #purple{
     height: 94px;
     width: 170px;
@@ -664,8 +738,9 @@ i {
     background-color: #D81AF8;
     border: none;
     cursor: pointer;
-    
 }
+
+/* -------------------------------------- Purple Media Queries 1/2 --------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     .choice-button-color #purple{
@@ -694,7 +769,9 @@ i {
         width: 60px;
     }
   }
+/* -------------------------------------- Purple Media Queries 2/2 --------------------------------------- */
 
+   /* ----- Choice Button Right Answer ------ */
 .choice-button .right{
     height: 94px;
     width: 170px;
@@ -707,7 +784,7 @@ i {
     cursor: pointer;
 
 }
-
+/* -------------------------------------- Right Answer Media Queries 1/2 --------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     .choice-button .right{
@@ -740,8 +817,10 @@ i {
         font-size: 20px;
     }
   }
+/* -------------------------------------- Right Answer Media Queries 2/2 --------------------------------------- */
 
 
+/* ---------------------------------------- Start- & Übungs- Button -------------------------------------------- */
 
 
 .title-iframe{
@@ -807,7 +886,7 @@ a{
     color: white;
 
 }
-
+/* -------------------------------------- Start- & Übungs- Button  Media Queries 1/2 --------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
     .uebungs-button{
@@ -878,8 +957,10 @@ a{
     }
   }
 
+/* -------------------------------------- Start- & Übungs- Button  Media Queries 2/2 --------------------------------------- */
 
-    /* ----------------------------------------------------------- Splash Screen ----------------------------------------------------*/
+
+/* ----------------------------------------------------------- Splash Screen ----------------------------------------------------*/
 
     .intro{
         position: fixed;
@@ -904,14 +985,29 @@ a{
         color: #ffffff;
     }
 
+
+    @media only screen and (max-width: 390px) {
+        .logo-header{
+            top: 30%;
+            left: 70%;
+        }
+    }
+
     .logo{
         position: relative;
         display: inline-block;
         bottom: -20px;
         opacity: 0;
         font-size: 120px;
-
     }
+
+    @media only screen and (max-width: 390px) {
+        .logo{
+            font-size: 75px;
+            bottom: -10px;
+            left: -30%;
+        }
+        }
 
     .logo.active{
         bottom:0;
