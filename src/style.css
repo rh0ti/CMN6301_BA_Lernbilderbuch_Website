@@ -21,7 +21,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -30,9 +31,15 @@ body {
     font-family: 'Neatly-Printed';
     background-image: url(../images/Background.jpg);
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
@@ -40,8 +47,11 @@ body {
 
  nav{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self:flex-start;
+    -ms-flex-item-align:start;
+        align-self:flex-start;
     /* border: 3px solid green; */
     left: 50%;
 }
@@ -69,10 +79,19 @@ ul li a{
 /* ----------------------------------------------- Book Section -------------------------------------------- */
 #book-section {
     height:100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: relative;
     /* border: 3px solid red; */
 
@@ -83,10 +102,15 @@ ul li a{
     border: none;
     background-color: white;
     border-radius: 90%;
-    box-shadow: 0px 5px 5px rgb(22, 133, 177);
+    -webkit-box-shadow: 0px 5px 5px rgb(22, 133, 177);
+            box-shadow: 0px 5px 5px rgb(22, 133, 177);
     margin: 150px; 
     cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 
 }
 
@@ -135,7 +159,11 @@ i {
     width: 640px;
     height: 780px;
     position: relative;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     z-index: 0;
 }
 
@@ -144,7 +172,11 @@ i {
         width: 540px;
         height: 680px;
         position: relative;
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
         transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
         z-index: 0;
     }
   }
@@ -177,11 +209,13 @@ i {
     position: absolute;
     top: 0;
     left: 0;
-    perspective: 1500px;
+    -webkit-perspective: 1500px;
+            perspective: 1500px;
 }
 
 .front {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     border-left: 3px solid transparent;
 }
 
@@ -192,12 +226,24 @@ i {
     height: 100%;
     top: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: white;
-    transform-origin: left;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     border-radius: 0px 50px 50px 0px;
 }
 
@@ -213,21 +259,32 @@ i {
 .back-content {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 0px 50px 50px 0px;
 }
 
 .back-content {
-    transform: rotateY(180deg)
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg)
 }
 
 /* Paper Flipped */
 .flipped .front,
 .flipped .back {
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
     border-radius: 0px 50px 50px 0px;
 }
 
@@ -294,7 +351,8 @@ i {
 .cover-img {
     width: 200px;
     height: 270px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
 }
 
@@ -353,9 +411,15 @@ i {
     border-radius:50px;
     background-color: #F15BB5;
     border: 3px solid #6D200E;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:center;
-    align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 
 }
@@ -427,9 +491,15 @@ i {
     width: 592px;
     background-color: #EBE7EA;
     border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 100px;
 }
 
@@ -688,9 +758,15 @@ a{
     border-radius: 50px;
     background-color: #F15BB5;
     border: 3px solid #6D200E;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:center;
-    align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     top: 250px;
     font-family: 'Boldchild';
@@ -714,9 +790,15 @@ a{
     border-radius: 50px;
     background-color: #F15BB5;
     border: 3px solid #6D200E;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:center;
-    align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* position: relative;
     top: 250px; */
     font-family: 'Neatly-Printed';
@@ -854,4 +936,3 @@ a{
             -ms-transform: translate(-50%, 10%);
                 transform: translate(-50%, 10%);
     }
-
