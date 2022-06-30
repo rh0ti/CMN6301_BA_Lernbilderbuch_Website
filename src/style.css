@@ -335,13 +335,13 @@ i {
 }
 
 #b7{
-    background-image: url(../images/Book_Rückseite.jpg);
+    background-image: url(../images/Book_Rueckseite.jpg);
     background-size: cover;
     border-radius: 50px 0px 0px 50px;
 }
 
 #b5{
-    background-image: url(../images/Uebung_Rückseite.jpg);
+    background-image: url(../images/Uebung_Ruekseite.jpg);
     background-size: cover;
     border-radius: 50px 0px 0px 50px;
     background-position: center;
