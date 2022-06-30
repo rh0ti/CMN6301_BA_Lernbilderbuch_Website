@@ -443,8 +443,9 @@ i {
 
   @media only screen and (max-width: 390px) {
     .front h1{
-        font-size: 1.2em;
+        font-size: 1em;
         bottom: 5%;
+        left: -0.5%;
     }
   }
 
